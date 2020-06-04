@@ -1,0 +1,150 @@
+c<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Paddy Harvest</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <h1> <a href="http://all-free-download.com/free-website-templates/">Paddy Harvest</a></h1>
+    <h2>By Sumanasa.com</h2>
+  </div>
+  <div id="menu">
+    <ul>
+      <li><a href="http://all-free-download.com/free-website-templates/" class="active">Home</a></li>
+      <li><a href="http://all-free-download.com/free-website-templates/">Site News</a></li>
+      <li><a href="http://all-free-download.com/free-website-templates/">FAQ</a></li>
+      <li><a href="http://all-free-download.com/free-website-templates/">About Us</a></li>
+      <li><a href="http://all-free-download.com/free-website-templates/">Links</a></li>
+    </ul>
+  </div>
+  <div id="content">
+    <div id="sidebar">
+      <ul>
+        <li id="archives">
+          <h2>Trade Deatils</h2>
+         
+          <marquee direction="up">gjdfhef</marquee>
+        </li>
+        <!-- end #archives -->
+        <li id="categories">
+          <h2>Categories</h2>
+          <ul>
+            <li><a href="http://all-free-download.com/free-website-templates/">Category #1</a> <small>(21)</small></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Category #2</a> <small>(11)</small></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Category #3</a> <small>(13)</small></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Category #4</a> <small>(89)</small></li>
+          </ul>
+        </li>
+        <!-- end #categories -->
+        <li id="blogroll">
+          <h2>Blogroll</h2>
+          <ul>
+            <li><a href="http://all-free-download.com/free-website-templates/">Jack Hogan</a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Jill Reagan</a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Humpty Smith</a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Bumpty Smith</a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Mary Lamb</a></li>
+          </ul>
+        </li>
+        <!-- end #blogroll -->
+        <li id="meta">
+          <h2>Meta</h2>
+          <ul>
+            <li><a href="http://all-free-download.com/free-website-templates/">Site Admin</a></li>
+            <li><a href="http://all-free-download.com/free-website-templates/">Logout</a></li>
+            <li><a href="http://validator.w3.org/check/referer">Valid <abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a></li>
+          </ul>
+        </li>
+        <!-- end #meta -->
+      </ul>
+    </div>
+    <!-- end #sidebar -->
+    <div id="blog">
+      <div id="post-1" class="post">
+        <h2 class="title"> <a href="http://all-free-download.com/free-website-templates/"></a></h2>
+        <h3 class="date">March 26, 2007</h3>
+        <div class="entry">
+<h1 style="color:green;"><center>Phone number:</center></h1>
+    	
+	<input type="text" name=phno> 
+	<h1 style="color:green;"><center>Choose a crop:</center></h1>
+        <center> <select name=type>
+	<option value="paddy">Paddy</option>
+	<option value="bajra">Bajra</option>
+	<option value="jowar">Jowar</option>
+	<option value="sugarcane">Sugar cane</option>
+	</select>
+	<br>
+	<br>
+<h1 style="color:green;"><center>Choose amount of production:</center></h1>
+        <center> <select placeholder="In tonnes">
+	<option value="paddy">1 quintol</option>
+	<option value="bajra">2 quintol</option>
+	<option value="jowar">3 quintol</option>
+	<option value="sugarcane">4 quintol</option>
+	</select>      <br><br>  
+<button onclick="getLocation()" style="color:brown;">Get Location</button><br><br>
+<br>
+<h1 style="color:green;"><center>Choose District:</center></h1>
+        <center> <select placeholder="In tonnes">
+	<option value="paddy">Kurnool</option>
+	<option value="bajra">Anantapur</option>
+	<option value="jowar">Kadapa</option>
+	<option value="sugarcane">Nellore</option>
+	<option value="paddy">Ongole</option>
+	<option value="bajra">chittore</option>
+	<option value="jowar">prakasham</option>
+	<option value="sugarcane">East Godavarai</option>
+	</select>      <br><br>
+<button nam="submit">Submit</button>
+
+
+<?php
+if(isset($_POST['submit'])){
+$selected_val = $_POST['type'];
+echo "$selected_val"; // Storing Selected Value In Variable
+//echo "You have selected :" .$selected_val;  // Displaying Selected Value
+}
+?>
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  //window.location.href=”index.php?lat="position.coords.latitude";
+ // window.location.href=”index.html?uid=position.coords.latitude";
+
+}
+</script>
+</div>
+ </div>
+      <!-- end #post-1 -->
+      
+    </div>
+    <!-- end #blog -->
+    <div style="clear: both; height: 1px;"></div>
+  </div>
+  <!-- end #content -->
+  <!-- Please do not remove the "Design by" information. -->
+  <div id="footer">
+    <p>Copyright &copy; 2007 Paddy Harvest. Design by <a href="http://www.sumanasa.com/">Sumanasa.com</a>.</p>
+  </div>
+  <!-- end footer -->
+</div>
+<!-- end #wrapper -->
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>
